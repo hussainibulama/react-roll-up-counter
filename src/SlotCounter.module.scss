@@ -1,0 +1,29 @@
+.slot{
+    position: relative;
+    overflow: hidden;
+    margin: 0 0.1rem;
+    color: #fff;
+}
+.slot_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bounce {
+    animation: mymove 0.3s;
+  }
+  
+  @keyframes mymove {
+    from {top: -7px;}
+    to {top: 0;}
+  }
+  
+  .slot_number {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
