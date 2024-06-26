@@ -2,7 +2,7 @@ import React, { useState, useEffect, RefObject, CSSProperties } from 'react';
 import styles from './SlotCounter.module.scss';
 import cx from 'classnames';
 
-interface SlotCounterProps {
+export interface SlotCounterProps {
   value: number;
   fontSize?: string; // Now fontSize is a number
   transitionDuration?: number; // Now transitionDuration is a number
@@ -77,7 +77,7 @@ const SlotCounter: React.FC<SlotCounterProps> = ({ value, fontSize = "40px", tra
 
 export default SlotCounter;
 
-interface DigitSlotProps {
+export interface DigitSlotProps {
   digit: number;
   prevDigit: number;
   reset: boolean;
