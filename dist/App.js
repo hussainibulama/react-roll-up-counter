@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = require("react");
 require("./App.css");
-var _SlotCounter = _interopRequireDefault(require("./SlotCounter"));
+var _SlotCounter = _interopRequireDefault(require("react-roll-up-counter/dist/SlotCounter"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function App() {
   const [number, setNumber] = (0, _react.useState)(1020);

@@ -13,9 +13,12 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "classnames": "^2.5.1",
+    "i": "^0.3.7",
     "node-sass": "^7.0.3",
+    "npm": "^10.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-roll-up-counter": "^0.1.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.6",
     "typescript": "^4.9.5",
@@ -24,7 +27,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-package": "babel src/ --out-dir dist --extensions '.ts,.tsx' --copy-files",
+    "build-package": "npm run build-ts && npm run build-js",
+    "build-ts": "babel src --out-dir dist --ignore 'src/**/*.test.js' --copy-files",
+    "build-js": "babel src --out-dir dist --extensions '.ts,.tsx' --ignore '**/*.d.ts'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
