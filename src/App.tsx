@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+// import logo from './logo.svg';
 import './App.css';
-import AnimatedCounter from './SlotCounter';
-import SlotCounter from "react-roll-up-counter/dist/SlotCounter";
+import RollUpCounter from './lib/components/RollUpCounter';
 function App() {
   const [number, setNumber] = useState(1020);
 
@@ -15,7 +14,7 @@ function App() {
         <input value={number} onChange={(e)=> setNumber(Number(e.target.value))} />
         <button onClick={updateValue}>Change Value</button>
       </div>
-        <SlotCounter value={number}/>
+        <RollUpCounter value={number}/>
     </div>
   );
 }

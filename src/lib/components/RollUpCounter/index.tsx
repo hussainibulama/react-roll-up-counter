@@ -1,8 +1,8 @@
 import React, { useState, useEffect, RefObject, CSSProperties } from 'react';
-import styles from './SlotCounter.module.scss';
+import styles from './RollUpCounter.module.scss';
 import cx from 'classnames';
 
-export interface SlotCounterProps {
+export interface RollUpCounterProps {
   value: number;
   fontSize?: string; // Now fontSize is a number
   transitionDuration?: number; // Now transitionDuration is a number
@@ -14,7 +14,7 @@ export interface SlotCounterProps {
 
 const TIMEOUT_TIME = 100;
 
-const SlotCounter: React.FC<SlotCounterProps> = ({ value, fontSize = "40px", transitionDuration = 0.5, ref, slotHeight = "40px", slotWidth = "20px", slotClass }) => {
+const RollUpCounter: React.FC<RollUpCounterProps> = ({ value, fontSize = "40px", transitionDuration = 0.5, ref, slotHeight = "40px", slotWidth = "20px", slotClass }) => {
   const [currentValue, setCurrentValue] = useState(value);
   const [prevValue, setPrevValue] = useState(value);
   const [reset, setReset] = useState(false);
@@ -75,7 +75,7 @@ const SlotCounter: React.FC<SlotCounterProps> = ({ value, fontSize = "40px", tra
   );
 };
 
-export default SlotCounter;
+export default RollUpCounter;
 
 export interface DigitSlotProps {
   digit: number;
