@@ -43,7 +43,7 @@ v8.16.0
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine. Happily follow the steps and you're good to go
 
 ## Installation
 
@@ -141,10 +141,15 @@ const MyComponent: React.FC = () => {
 
 `Props`
 
-| Prop | Type | values |
+| Prop | Type | default values |
 | --- | --- | --- |
-| number | 0 | Time in milliseconds |
-
+| value | number | '' |
+| ref | RefObject | '' |
+| transitionDuration | number | 0.5 |
+| slotClass | string | "" |
+| fontSize | string | 40px |
+| slotHeight | string | 40px |
+| slotWidth | string | 20px |
 <!-- If present, the request will be delayed by the given amount of time
 
 Example:
