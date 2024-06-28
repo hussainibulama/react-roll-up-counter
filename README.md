@@ -144,12 +144,19 @@ const MyComponent: React.FC = () => {
 | Prop | Type | default values |
 | --- | --- | --- |
 | value | number | '' |
-| ref | RefObject | '' |
-| transitionDuration | number | 0.5 |
-| slotClass | string | "" |
-| fontSize | string | 40px |
-| slotHeight | string | 40px |
-| slotWidth | string | 20px |
+| ref | refobject/optional | '' |
+| transitionDuration | number/optional | 0.5 |
+| slotClass | string/optional | "" |
+| fontSize | string/optional  | 40px |
+| slotHeight | string/optional | 40px |
+| slotWidth | string/optional | 20px |
+
+### slotClass: 
+When you want to overide default styles, fonts etc....You can also decide to change height and width from the class here.
+### slotHeight: 
+When you want to overide height of each digit. Should have the unit attach like px/em
+### slotWidth: 
+When you want to overide width of each digit. Should have the unit attach like px/em
 <!-- If present, the request will be delayed by the given amount of time
 
 Example:
