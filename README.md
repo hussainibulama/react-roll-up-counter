@@ -70,6 +70,7 @@ $ yarn add --dev react-roll-up-count
 
 ## Usage
 
+![](https://github.com/hussainibulama/react-roll-up-counter/blob/main/src/assets/sample.gif)
 <!-- ### Serving the app
 
 ```sh
