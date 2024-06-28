@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import RollUpCounter from './lib/components/RollUpCounter';
 function App() {
@@ -8,6 +7,7 @@ function App() {
   const updateValue = () => {
     setNumber(Math.floor(Math.random() * 9999));
   };
+ 
   return (
     <div className="App">
       <div> 
