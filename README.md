@@ -127,7 +127,7 @@ If present, the request will be performed as soon as the component is mounted --
 Example:
 
 ```tsx
-import RollUpCounter from "react-roll-up-count"
+import Roller from "react-roll-up-count"
 
 const MyComponent = () => {
 
