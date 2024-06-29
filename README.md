@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/react-roll-up-count.svg)](//npmjs.com/package/react-roll-up-count)
-<!-- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) -->
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## React Roll Up Count
 
@@ -129,11 +129,11 @@ Example:
 ```tsx
 import RollUpCounter from "react-roll-up-count"
 
-const MyComponent: React.FC = () => {
+const MyComponent = () => {
 
   return (
     <div className="App">
-        <RollUpCounter value={123456} />
+        <Roller value={123456} />
     </div>
   );
 };
@@ -146,16 +146,16 @@ const MyComponent: React.FC = () => {
 | value | number | '' |
 | ref | refobject/optional | '' |
 | transitionDuration | number/optional | 0.5 |
-| slotClass | string/optional | "" |
+| className | string/optional | "" |
 | fontSize | string/optional  | 40px |
-| slotHeight | string/optional | 40px |
-| slotWidth | string/optional | 20px |
+| height | string/optional | 40px |
+| width | string/optional | 20px |
 
-### slotClass: 
-When you want to overide default styles, fonts etc....You can also decide to change height and width from the class here.
-### slotHeight: 
+### className: 
+When you want to overide default styles, fonts etc....You can also decide to change height and width from the class here. When you use className, width height, margin and fontSize params will not be usefull anylonger, you have to supply them in your class.
+### height: 
 When you want to overide height of each digit. Should have the unit attach like px/em
-### slotWidth: 
+### width: 
 When you want to overide width of each digit. Should have the unit attach like px/em
 <!-- If present, the request will be delayed by the given amount of time
 

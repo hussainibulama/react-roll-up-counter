@@ -1,7 +1,7 @@
 /** Types */
-export { type RollUpCounterProps } from "./components/RollUpCounter";
-export { type DigitSlotProps } from "./components/RollUpCounter";
+export { type RollerProps } from "./components/Roller";
+export { type DigitSlotProps } from "./components/DigitSlot";
 
 /** Components */
-export { default as RollUpCounter }  from "./components/RollUpCounter";
-export { DigitSlot }  from "./components/RollUpCounter";
+export { default as Roller } from "./components/Roller";
+export { default as DigitSlot } from "./components/DigitSlot";
